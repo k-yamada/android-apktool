@@ -10,5 +10,15 @@ describe Apktool do
     end
   end
 
+  describe "constants" do
+    it "get APKTOOL_PATH" do
+      Apktool::APKTOOL_PATH.should =~ /\/apktool/
+    end
+
+    it "get DEBUG_KEYSTORE_PATH" do
+      Apktool::DEBUG_KEYSTORE_PATH.should =~ /\/debug.keystore/
+    end
+  end
+
 end
 
